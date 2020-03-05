@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F93839492322AC4B00BD531C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93839482322AC4B00BD531C /* AppDelegate.swift */; };
+		F938394B2322AC4B00BD531C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = F938394A2322AC4B00BD531C /* art.scnassets */; };
+		F938394D2322AC4B00BD531C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F938394C2322AC4B00BD531C /* ViewController.swift */; };
+		F93839502322AC4B00BD531C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F938394E2322AC4B00BD531C /* Main.storyboard */; };
+		F93839522322AC4E00BD531C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F93839512322AC4E00BD531C /* Assets.xcassets */; };
+		F93839552322AC4E00BD531C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F93839532322AC4E00BD531C /* LaunchScreen.storyboard */; };
+		F93839602322AC4E00BD531C /* ARSmartCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F938395F2322AC4E00BD531C /* ARSmartCameraTests.swift */; };
+		F938396B2322AC4E00BD531C /* ARSmartCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F938396A2322AC4E00BD531C /* ARSmartCameraUITests.swift */; };
+		F93839792322AD8200BD531C /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F93839782322AD8200BD531C /* Resnet50.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F938395C2322AC4E00BD531C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F938393D2322AC4B00BD531C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F93839442322AC4B00BD531C;
+			remoteInfo = ARSmartCamera;
+		};
+		F93839672322AC4E00BD531C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F938393D2322AC4B00BD531C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F93839442322AC4B00BD531C;
+			remoteInfo = ARSmartCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F93839452322AC4B00BD531C /* ARSmartCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARSmartCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F93839482322AC4B00BD531C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F938394A2322AC4B00BD531C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		F938394C2322AC4B00BD531C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F938394F2322AC4B00BD531C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F93839512322AC4E00BD531C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F93839542322AC4E00BD531C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F93839562322AC4E00BD531C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F938395B2322AC4E00BD531C /* ARSmartCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARSmartCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F938395F2322AC4E00BD531C /* ARSmartCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSmartCameraTests.swift; sourceTree = "<group>"; };
+		F93839612322AC4E00BD531C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F93839662322AC4E00BD531C /* ARSmartCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARSmartCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F938396A2322AC4E00BD531C /* ARSmartCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSmartCameraUITests.swift; sourceTree = "<group>"; };
+		F938396C2322AC4E00BD531C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F93839782322AD8200BD531C /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = ../../../../../Downloads/Resnet50.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F93839422322AC4B00BD531C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F93839582322AC4E00BD531C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F93839632322AC4E00BD531C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F938393C2322AC4B00BD531C = {
+			isa = PBXGroup;
+			children = (
+				F93839472322AC4B00BD531C /* ARSmartCamera */,
+				F938395E2322AC4E00BD531C /* ARSmartCameraTests */,
+				F93839692322AC4E00BD531C /* ARSmartCameraUITests */,
+				F93839462322AC4B00BD531C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F93839462322AC4B00BD531C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F93839452322AC4B00BD531C /* ARSmartCamera.app */,
+				F938395B2322AC4E00BD531C /* ARSmartCameraTests.xctest */,
+				F93839662322AC4E00BD531C /* ARSmartCameraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F93839472322AC4B00BD531C /* ARSmartCamera */ = {
+			isa = PBXGroup;
+			children = (
+				F93839482322AC4B00BD531C /* AppDelegate.swift */,
+				F938394A2322AC4B00BD531C /* art.scnassets */,
+				F938394C2322AC4B00BD531C /* ViewController.swift */,
+				F938394E2322AC4B00BD531C /* Main.storyboard */,
+				F93839512322AC4E00BD531C /* Assets.xcassets */,
+				F93839532322AC4E00BD531C /* LaunchScreen.storyboard */,
+				F93839782322AD8200BD531C /* Resnet50.mlmodel */,
+				F93839562322AC4E00BD531C /* Info.plist */,
+			);
+			path = ARSmartCamera;
+			sourceTree = "<group>";
+		};
+		F938395E2322AC4E00BD531C /* ARSmartCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				F938395F2322AC4E00BD531C /* ARSmartCameraTests.swift */,
+				F93839612322AC4E00BD531C /* Info.plist */,
+			);
+			path = ARSmartCameraTests;
+			sourceTree = "<group>";
+		};
+		F93839692322AC4E00BD531C /* ARSmartCameraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F938396A2322AC4E00BD531C /* ARSmartCameraUITests.swift */,
+				F938396C2322AC4E00BD531C /* Info.plist */,
+			);
+			path = ARSmartCameraUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F93839442322AC4B00BD531C /* ARSmartCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F938396F2322AC4E00BD531C /* Build configuration list for PBXNativeTarget "ARSmartCamera" */;
+			buildPhases = (
+				F93839412322AC4B00BD531C /* Sources */,
+				F93839422322AC4B00BD531C /* Frameworks */,
+				F93839432322AC4B00BD531C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARSmartCamera;
+			productName = ARSmartCamera;
+			productReference = F93839452322AC4B00BD531C /* ARSmartCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F938395A2322AC4E00BD531C /* ARSmartCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F93839722322AC4E00BD531C /* Build configuration list for PBXNativeTarget "ARSmartCameraTests" */;
+			buildPhases = (
+				F93839572322AC4E00BD531C /* Sources */,
+				F93839582322AC4E00BD531C /* Frameworks */,
+				F93839592322AC4E00BD531C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F938395D2322AC4E00BD531C /* PBXTargetDependency */,
+			);
+			name = ARSmartCameraTests;
+			productName = ARSmartCameraTests;
+			productReference = F938395B2322AC4E00BD531C /* ARSmartCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F93839652322AC4E00BD531C /* ARSmartCameraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F93839752322AC4E00BD531C /* Build configuration list for PBXNativeTarget "ARSmartCameraUITests" */;
+			buildPhases = (
+				F93839622322AC4E00BD531C /* Sources */,
+				F93839632322AC4E00BD531C /* Frameworks */,
+				F93839642322AC4E00BD531C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F93839682322AC4E00BD531C /* PBXTargetDependency */,
+			);
+			name = ARSmartCameraUITests;
+			productName = ARSmartCameraUITests;
+			productReference = F93839662322AC4E00BD531C /* ARSmartCameraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F938393D2322AC4B00BD531C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Milind Pathiyal";
+				TargetAttributes = {
+					F93839442322AC4B00BD531C = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					F938395A2322AC4E00BD531C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = F93839442322AC4B00BD531C;
+					};
+					F93839652322AC4E00BD531C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = F93839442322AC4B00BD531C;
+					};
+				};
+			};
+			buildConfigurationList = F93839402322AC4B00BD531C /* Build configuration list for PBXProject "ARSmartCamera" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F938393C2322AC4B00BD531C;
+			productRefGroup = F93839462322AC4B00BD531C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F93839442322AC4B00BD531C /* ARSmartCamera */,
+				F938395A2322AC4E00BD531C /* ARSmartCameraTests */,
+				F93839652322AC4E00BD531C /* ARSmartCameraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F93839432322AC4B00BD531C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F938394B2322AC4B00BD531C /* art.scnassets in Resources */,
+				F93839552322AC4E00BD531C /* LaunchScreen.storyboard in Resources */,
+				F93839522322AC4E00BD531C /* Assets.xcassets in Resources */,
+				F93839502322AC4B00BD531C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F93839592322AC4E00BD531C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F93839642322AC4E00BD531C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F93839412322AC4B00BD531C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F938394D2322AC4B00BD531C /* ViewController.swift in Sources */,
+				F93839792322AD8200BD531C /* Resnet50.mlmodel in Sources */,
+				F93839492322AC4B00BD531C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F93839572322AC4E00BD531C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93839602322AC4E00BD531C /* ARSmartCameraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F93839622322AC4E00BD531C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F938396B2322AC4E00BD531C /* ARSmartCameraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F938395D2322AC4E00BD531C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F93839442322AC4B00BD531C /* ARSmartCamera */;
+			targetProxy = F938395C2322AC4E00BD531C /* PBXContainerItemProxy */;
+		};
+		F93839682322AC4E00BD531C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F93839442322AC4B00BD531C /* ARSmartCamera */;
+			targetProxy = F93839672322AC4E00BD531C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F938394E2322AC4B00BD531C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F938394F2322AC4B00BD531C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F93839532322AC4E00BD531C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F93839542322AC4E00BD531C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F938396D2322AC4E00BD531C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F938396E2322AC4E00BD531C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F93839702322AC4E00BD531C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5W7NM928E;
+				INFOPLIST_FILE = ARSmartCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MilindianCompany.ARSmartCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F93839712322AC4E00BD531C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5W7NM928E;
+				INFOPLIST_FILE = ARSmartCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MilindianCompany.ARSmartCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F93839732322AC4E00BD531C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARSmartCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MilindianCompany.ARSmartCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARSmartCamera.app/ARSmartCamera";
+			};
+			name = Debug;
+		};
+		F93839742322AC4E00BD531C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARSmartCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MilindianCompany.ARSmartCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARSmartCamera.app/ARSmartCamera";
+			};
+			name = Release;
+		};
+		F93839762322AC4E00BD531C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARSmartCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MilindianCompany.ARSmartCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARSmartCamera;
+			};
+			name = Debug;
+		};
+		F93839772322AC4E00BD531C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARSmartCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MilindianCompany.ARSmartCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARSmartCamera;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F93839402322AC4B00BD531C /* Build configuration list for PBXProject "ARSmartCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F938396D2322AC4E00BD531C /* Debug */,
+				F938396E2322AC4E00BD531C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F938396F2322AC4E00BD531C /* Build configuration list for PBXNativeTarget "ARSmartCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F93839702322AC4E00BD531C /* Debug */,
+				F93839712322AC4E00BD531C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F93839722322AC4E00BD531C /* Build configuration list for PBXNativeTarget "ARSmartCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F93839732322AC4E00BD531C /* Debug */,
+				F93839742322AC4E00BD531C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F93839752322AC4E00BD531C /* Build configuration list for PBXNativeTarget "ARSmartCameraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F93839762322AC4E00BD531C /* Debug */,
+				F93839772322AC4E00BD531C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F938393D2322AC4B00BD531C /* Project object */;
+}
